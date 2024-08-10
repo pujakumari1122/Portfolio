@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .contact-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .contact-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-section label {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .contact-section input[type="text"],
+        .contact-section input[type="email"],
+        .contact-section textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .contact-section textarea {
+            resize: vertical;
+        }
+        .contact-section input[type="submit"] {
+            padding: 10px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-section input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
